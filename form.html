@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    </head>
+    <title>Document</title>
+  </head>
+  <body class="bg-[#0f172a]">
+    <form class="w-full max-w-sm mx-auto my-[150px]">
+      <div class="shadow border-gray-700 border bg-[#121b2d] px-6 pt-10 pb-3 rounded-lg">
+        <div class="flex flex-col">
+          <input class="bg-[#1e293b] appearance-none border-none rounded placeholder:text-gray-300 shadow-md" type="text" placeholder="Username" />
+        </div>
+        <div class="py-5 flex flex-col">
+          <textarea class="bg-[#1e293b] appearance-none border-none rounded placeholder:text-gray-300 shadow-md" name="Issue" id="" cols="30" rows="5" placeholder="Address"></textarea>
+        </div>
+        <div>
+          <label class="text-gray-300">Pilihan Paket</label>
+          <select class="rounded-lg flex flex-col w-full bg-[#1e293b] border-none text-gray-300 shadow-md">
+            <option value="" hidden>-</option>
+            <option class="text-gray-300" value="Paket 1">Paket 1</option>
+            <option class="text-gray-300" value="Paket 2">Paket 2</option>
+            <option class="text-gray-300" value="Paket 3">Paket 3</option>
+            <option class="text-gray-300" value="Paket 4">Paket 4</option>
+          </select>
+        </div>
+        <button class="bg-[#0ea5e9] rounded-full px-3 py-1 my-4 text-white font-semibold">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
